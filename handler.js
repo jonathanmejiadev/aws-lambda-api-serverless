@@ -10,3 +10,14 @@ module.exports.hello = async (event, context, callback) => {
 
   return callback(null, response);
 };
+
+module.exports.helloUser = async (event) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Hello User!'
+    }),
+  };
+
+  return response;
+};
