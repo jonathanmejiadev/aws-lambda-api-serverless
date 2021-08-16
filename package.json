@@ -4,7 +4,8 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "invoke": "serverless invoke local -f hello"
+    "invoke": "serverless invoke local -f hello",
+    "deploy" : "serverless deploy --stage dev --verbose"
   },
   "keywords": [],
   "author": "",
