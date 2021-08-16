@@ -10,6 +10,9 @@ provider:
   profile: deployaws
   region: sa-east-1
 
+plugins:
+  - serverless-offline
+
 functions:
   hello:
     handler: handler.hello
@@ -23,3 +26,9 @@ functions:
       - http:
           method: GET
           path: /user/{name}
+  createUser:
+    handler: handler.createUser
+    events:
+      - http:
+          method: POST
+          path: /user

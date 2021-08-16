@@ -5,9 +5,12 @@
   "main": "handler.js",
   "scripts": {
     "invoke": "serverless invoke local -f hello",
-    "deploy" : "serverless deploy --stage dev --verbose"
+    "deploy": "serverless deploy --stage dev --verbose"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^8.0.0"
+  }
 }
