@@ -1,0 +1,12 @@
+{
+  "name": "aws-lambda-api-ss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "invoke": "serverless invoke local -f hello"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
