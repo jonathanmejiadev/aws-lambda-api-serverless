@@ -15,7 +15,8 @@ module.exports.helloUser = async (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'Hello User!'
+      message: `Hello ${event.pathParameters.name}!`,
+      input: event
     }),
   };
 
